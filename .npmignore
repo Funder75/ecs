@@ -1,0 +1,35 @@
+# Source files
+src/
+tests/
+
+# Build artifacts (only dist/ should be published)
+*.tsbuildinfo
+
+# Development files
+.vscode/
+.idea/
+*.log
+*.swp
+*.swo
+*~
+
+# Dependencies
+node_modules/
+
+# Config files
+tsconfig.json
+vitest.config.ts
+biome.jsonc
+pnpm-lock.yaml
+
+# Git
+.git/
+.gitignore
+
+# CI/CD
+.github/
+
+# Documentation (README.md and LICENSE are included via files field)
+*.md
+!README.md
+
