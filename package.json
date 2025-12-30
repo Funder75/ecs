@@ -24,7 +24,8 @@
 		"test:watch": "vitest",
 		"lint": "biome check .",
 		"lint:fix": "pnpm exec biome check --write",
-		"prepublishOnly": "pnpm run build"
+		"prepublishOnly": "pnpm run build",
+		"publish": "pnpm publish"
 	},
 	"keywords": [
 		"ecs",
