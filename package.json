@@ -1,0 +1,52 @@
+{
+	"name": "@funderforge/ecs",
+	"version": "0.1.1",
+	"description": "A generic component framework implementing an Entity-Component System (ECS) pattern, optimized for performance and simplicity",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"lint": "biome check .",
+		"lint:fix": "pnpm exec biome check --write",
+		"prepublishOnly": "pnpm run build",
+		"publish": "pnpm publish"
+	},
+	"keywords": [
+		"ecs",
+		"entity-component-system",
+		"component",
+		"entity",
+		"framework",
+		"game-engine",
+		"hierarchy",
+		"typescript"
+	],
+	"author": "funder75",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/funder75/ecs"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.3.8",
+		"@types/node": "^25.0.3",
+		"typescript": "~5.9.3",
+		"vitest": "4.0.16"
+	}
+}
