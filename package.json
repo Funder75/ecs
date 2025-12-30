@@ -36,11 +36,11 @@
 		"hierarchy",
 		"typescript"
 	],
-	"author": "",
+	"author": "funder75",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/funder75/ecs"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.3.8",
