@@ -121,14 +121,14 @@ export default abstract class Component {
 	 * Override this method in derived classes to implement tick-based logic.
 	 * @param deltaTime - The time elapsed since the last tick in milliseconds.
 	 */
-	protected onTick(_deltaTime: number): void {}
+	protected onTick(_deltaTime: number): void { }
 
 	/**
 	 * Virtual method called when the component's effective enabled state changes.
 	 * Override this method in derived classes to respond to enabled state changes.
 	 * @param newValue - The new effective enabled state of the component.
 	 */
-	protected onEnabledChanged(_newValue: boolean): void {}
+	protected onEnabledChanged(_newValue: boolean): void { }
 
 	/**
 	 * Gets the effective enabled state of this component, considering both its own `enabledSelf` value and its entity's enabled state.
