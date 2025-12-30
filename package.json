@@ -1,6 +1,6 @@
 {
 	"name": "@funderforge/ecs",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A generic component framework implementing an Entity-Component System (ECS) pattern, optimized for performance and simplicity",
 	"type": "module",
 	"main": "./dist/index.js",
