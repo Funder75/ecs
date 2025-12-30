@@ -57,11 +57,11 @@ Key Concepts:
 ## Installation
 
 ```bash
-npm install component-framework
+npm install @funderforge/ecs
 # or
-pnpm install component-framework
+pnpm install @funderforge/ecs
 # or
-yarn add component-framework
+yarn add @funderforge/ecs
 ```
 
 ## Examples
@@ -69,7 +69,7 @@ yarn add component-framework
 ### Basic Entity Creation
 
 ```typescript
-import { Entity } from 'component-framework';
+import { Entity } from '@funderforge/ecs';
 
 // Create a root entity
 const root = new Entity({ id: 'root' });
@@ -89,7 +89,7 @@ console.log(child1.parent === root); // true
 ### Creating Components
 
 ```typescript
-import { Entity, Component } from 'component-framework';
+import { Entity, Component } from '@funderforge/ecs';
 
 // Define a custom component
 class TransformComponent extends Component {
@@ -273,7 +273,7 @@ const transform = player?.getComponent<TransformComponent>(
 ### Complete Example: Simple Game Scene
 
 ```typescript
-import { Entity, Component } from 'component-framework';
+import { Entity, Component } from '@funderforge/ecs';
 
 // Define components
 class TransformComponent extends Component {
